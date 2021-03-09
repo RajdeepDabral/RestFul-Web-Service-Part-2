@@ -1,5 +1,6 @@
 package dabral.rajdeep.restFullWebServicePart2;
 
+import io.swagger.annotations.ApiOperation;
 import org.springframework.stereotype.Component;
 
 import java.util.LinkedList;
@@ -17,9 +18,11 @@ public class UserService {
         list.add(new User(104,"sumit123!","sumit"));
     }
 
+
     public List<User> getList() {
         return list;
     }
+
 
     public User getUserById(int id){
         for(User u: list){
@@ -39,4 +42,16 @@ public class UserService {
         list.add(user);
         return true;
     }
+
+
+    public boolean deleteUser(int id){
+        for(User u :list){
+            if(u.getId()==id){
+                list.remove(u);
+                return true;
+            }
+        }
+        return false;
+    }
+
 }

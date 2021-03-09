@@ -3,10 +3,17 @@ package dabral.rajdeep.restFullWebServicePart2;
 
 import com.fasterxml.jackson.annotation.JsonFilter;
 import com.fasterxml.jackson.annotation.JsonIgnore;
-@JsonFilter("User")
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+import org.jetbrains.annotations.NotNull;
+
+//@JsonFilter("User")
+@ApiModel("User class with id , name and password Instance variable !!!")
 public class User {
     private int id;
    //@JsonIgnore
+    @ApiModelProperty("Password cannot be null!!!")
+    @NotNull()
     private String password;
     private String name;
 
