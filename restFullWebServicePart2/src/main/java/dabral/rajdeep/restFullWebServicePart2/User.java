@@ -8,7 +8,7 @@ import io.swagger.annotations.ApiModelProperty;
 import org.jetbrains.annotations.NotNull;
 
 //@JsonFilter("User")
-@ApiModel("User class with id , name and password Instance variable !!!")
+@ApiModel("User class with id , name and password !!!")
 public class User {
     private int id;
    //@JsonIgnore

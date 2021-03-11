@@ -109,9 +109,14 @@ public class UserController {
              Save details of the user using POST request.
              Delete a user using DELETE request.
 
+             // screenshot added
+
 
      7. In swagger documentation, add the description of each class and URI so that in swagger
            UI the purpose of class and URI is clear.
+
+
+          // screenshot added
      */
 
 
